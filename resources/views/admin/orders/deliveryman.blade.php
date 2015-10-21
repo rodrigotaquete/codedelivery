@@ -18,11 +18,13 @@
 
         <div class="form-group">
             {!! Form::label('DeliveryMan', 'Entregador: ') !!}
-            {!! Form::select('deliveryman', $users, null, ['class'=>'form-control']) !!}
+            {!! Form::select('user_deliveryman_id', $users, null, ['class'=>'form-control']) !!}
         </div>
 
         <div class="form-group">
             {!! Form::submit('Salvar pedido', ['class'=>'btn btn-primary']) !!}
+
+            <a href="{{ route('admin.orders.index') }}", class="btn btn-primary">Voltar</a>
         </div>
 
         {!! Form::close() !!}

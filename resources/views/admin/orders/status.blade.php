@@ -22,6 +22,8 @@
 
         <div class="form-group">
             {!! Form::submit('Salvar pedido', ['class'=>'btn btn-primary']) !!}
+
+            <a href="{{ route('admin.orders.index') }}", class="btn btn-primary">Voltar</a>
         </div>
 
         {!! Form::close() !!}
